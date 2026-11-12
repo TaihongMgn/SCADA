@@ -43,39 +43,25 @@
       <height>900</height>
      </rect>
     </property>
-    <widget class="QWidget" name="cfgPage">
-     <widget class="QLabel" name="labelCfg">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>130</y>
-        <width>241</width>
-        <height>81</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>设备组态（第 1 页，占位）</string>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="page_2">
-     <widget class="QLabel" name="labelDebug">
-      <property name="geometry">
-       <rect>
-        <x>150</x>
-        <y>160</y>
-        <width>251</width>
-        <height>131</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>通讯调试（第 2 页，占位）</string>
-      </property>
-     </widget>
-    </widget>
+    <widget class="DeviceConfigPage" name="cfgPage"/>
+    <widget class="ModbusDebugPage" name="page_2"/>
    </widget>
   </widget>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>DeviceConfigPage</class>
+   <extends>QWidget</extends>
+   <header>deviceconfigpage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ModbusDebugPage</class>
+   <extends>QWidget</extends>
+   <header>modbusdebugpage.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>
